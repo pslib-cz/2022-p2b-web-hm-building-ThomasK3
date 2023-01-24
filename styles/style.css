@@ -160,43 +160,41 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-.servis, .reference{
+.sluzby, .reference{
     margin: 0 20px;
     margin-top: 60px;
 }
-.servis_reference-top{
+.sluzby_reference-top{
     margin-bottom: 70px;
 }
-.servis_reference-top__head{
+.sluzby_reference-top__head{
     font-weight: 700;
     font-size: 1.5em;
 }
-.servis_reference-top__text{
+.sluzby_reference-top__text{
     font-family: 'Inter', sans-serif;
     font-size: 0.9em;
 }
-/*.servis__items{
-}*/
-.servis-item{
+.sluzby-item{
     padding-bottom: 40px;
 }
-.servis-item__img{
+.sluzby-item__img{
     width: 100%;
     min-height: 134px;
     margin-bottom: 20px;
 }
-.servis-item__img-leva{
+.sluzby-item__img-leva{
     border-radius: 0px 0px 40px 0px;
 }
-.servis-item__img-prava{
+.sluzby-item__img-prava{
     border-radius: 0px 0px 0px 40px;
 }
-.servis-item__head{
+.sluzby-item__head{
     font-family: 'OpenSans', sans-serif;
     font-weight: 700;
     padding-bottom: 15px;
 }
-.servis-item__text{
+.sluzby-item__text{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     margin: 0;
