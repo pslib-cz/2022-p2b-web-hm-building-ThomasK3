@@ -1,69 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>HMBuilding | DOMOVSKÁ STRÁNKA</title>
 </head>
 <body>
-
-
-    <nav class="navbar">
-        <img class="navbar__logo" alt="Logo stránky" src="media/logo.png">
-        <button class="navbar__hamburger" onclick="Hamburger()">&#xe9bd;</button>
-        <ul id="hamburger" class="navbar__items">
-            <li><a href="#">DOMŮ</a></li>
-            <li><a href="#sluzby">SLUŽBY</a></li>
-            <li><a href="#reference">REFERENCE</a></a></li>
-            <li><a href="sites/onas.html">O NÁS</a></li>
-            <li><a href="sites/kontakt.html">KONTAKT</a></li>
-        </ul>
-    </nav>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="./index.html"><img class="navbar__logo" alt="Logo" src="media/logo.png"></a>
+            <a onclick="Hamburger()" class="hamburger__text" href="javascript:void(0)">MENU</a>
+            <button class="navbar__hamburger" onclick="Hamburger()">&#xe9bd;</button>
+            <ul id="hamburger" class="navbar__items">
+                <li class="nav-active"><a href="./index.html">DOMŮ</a></li>
+                <li><a href="./index.html#sluzby">SLUŽBY</a></li>
+                <li><a href="./index.html#reference">REFERENCE</a></li>
+                <li><a href="./o_nas.html">O NÁS</a></li>
+                <li><a href="./kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
 
 <!------------------------------------------------------------------------------------------->
 
-    <header class="header">
-        <h1 class="header__main-head">HM Building.cz s.r.o.</h1>
-        <h2 class="header__second-head">liberecká stavební společnost</h2>
-        <p class="header__cta"><a class="button">pokračovat</a></p>
+        <header class="header">
+            <h1 class="header__main-head">HM Building.cz s.r.o.</h1>
+            <h2 class="header__second-head">liberecká stavební společnost</h2>
+            <p class="header__cta"><a href="#sluzby" class="button button-special">pokračovat</a></p>
+        </header> 
     </header> 
 
 <!------------------------------------------------------------------------------------------->
-
-    <section class="sluzby" id="sluzby">
-        <header class="sluzby_reference-top">
-            <h3 class="sluzby_reference-top__head">Využijte škálu našich <span class="orange-text">služeb</span></h3>
-            <p class="sluzby_reference-top__text">Ačkoliv provádíme především <b>průmyslové stavby</b>, není pro nás problém postavit Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
+    
+    <section id="sluzby" class="sluzby">
+        <header class="sluzby-top">
+            <h3 class="sluzby-top__head">Využijte škálu našich <span class="orange-text">služeb</span></h3>
+            <p class="about-top__text">Ačkoliv provádíme především <b>průmyslové stavby</b>, není pro nás problém postavit Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
         </header>
         <div class="sluzby__items">
-            <div class="sluzby-item">
-                <img class="sluzby-item__img sluzby-item__img-leva" alt="Novostavby" src="media/sluzby/sluzba-novostavby-1200w.jpg">
+            <img class="sluzby-item__img sluzby-item__img-leva" alt="Novostavby" src="media/sluzby/sluzba-novostavby-1200w.jpg">
+            <figure class="sluzby-item">
                 <h4 class="sluzby-item__head">NOVOSTAVBY</h4>
                 <p class="sluzby-item__text">Dle požadavků investora jsme schopní dodat <b>kompletní stavbu na klíč</b>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
                 <p class="sluzby-item__text">Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
-                <p class="sluzby-item__cta"><a class="button-dashed">Zobrazit více</a></p>
-            </div>
-            <div class="sluzby-item">
-                <img class="sluzby-item__img sluzby-item__img-prava" alt="Průmyslové stavby" src="media/sluzby/sluzba-prumyslove-stavby-1920w.jpg">
+                <p class="sluzby-item__cta"><a href="./novostavby.html" class="button-2">Zobrazit více</a></p>
+            </figure>
+            <img class="sluzby-item__img sluzby-item__img-prava" alt="Průmyslové stavby" src="media/sluzby/sluzba-prumyslove-stavby-1920w.jpg">
+            <figure class="sluzby-item">
                 <h4 class="sluzby-item__head">PRŮMYSLOVÉ STAVBY</h4>
                 <p class="sluzby-item__text">Realizujeme <b>průmyslové objekty ocelové konstrukce</b>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím <b>se dostáváme na přijatelné ceny</b>.</p>
-                <p class="sluzby-item__cta"><a class="button-dashed">Zobrazit více</a></p>
-            </div>
-            <div class="sluzby-item">
-                <img class="sluzby-item__img sluzby-item__img-leva" alt="Rekonstrukce domů i jiných staveb" src="media/sluzby/sluzba-rekonstrukce-1920w.jpg">
+                <p class="sluzby-item__cta"><a href="./prum_stavby.html" class="button-2">Zobrazit více</a></p>
+            </figure>
+            <img class="sluzby-item__img sluzby-item__img-leva" alt="Rekonstrukce domů i jiných staveb" src="media/sluzby/sluzba-rekonstrukce-1920w.jpg">
+            <figure class="sluzby-item">
                 <h4 class="sluzby-item__head">REKONSTRUKCE DOMŮ A JINÝCH STAVEB</h4>
                 <p class="sluzby-item__text">Provádíme veškeré práce spojené s <b>rekonstrukcí stávajících objektů</b>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <b>zateplení objektů</b>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
-                <p class="sluzby-item__cta"><a class="button-dashed">Zobrazit více</a></p>
-            </div>
-            <div class="sluzby-item">
-                <img class="sluzby-item__img sluzby-item__img-prava" alt="Komunikace a zpevněné plochy" src="media/sluzby/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg">
+                <p class="sluzby-item__cta"><a href="./rekonstrukce.html" class="button-2">Zobrazit více</a></p>
+            </figure>
+            <img class="sluzby-item__img sluzby-item__img-prava" alt="Komunikace a zpevněné plochy" src="media/sluzby/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg">
+            <figure class="sluzby-item">
                 <h4 class="sluzby-item__head">KOMUNIKACE A ZPEVNĚNÉ PLOCHY</h4>
                 <p class="sluzby-item__text">Komunikace a zpevněné plochy provádíme <b>včetně zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.</p>
-                <p class="sluzby-item__cta"><a class="button-dashed">Zobrazit více</a></p>
-            </div>
+                <p class="sluzby-item__cta"><a href="./komunikace.html" class="button-2">Zobrazit více</a></p>
+            </figure>
         </div>
     </section>
 
@@ -72,40 +73,46 @@
     <section class="promote">
         <p class="promote__text">Naše firma nabízí své služby ve stavebnictví od roku 2015. </p>
         <p class="promote__text">Za kvalitu naší práce ručíme.</p>
-        <p class="promote__cta"><a class="button">Přesvědčit se</a></p>
+        <p class="promote__cta"><a href="./reference.html" class="button">Přesvědčit se</a></p>
     </section>
 
 <!------------------------------------------------------------------------------------------->
 
-    <section class="reference" id="reference">
-        <header class="sluzby_reference-top">
-            <h3 class="sluzby_reference-top__head">Rádi vám ukážeme naše <span class="orange-text">reference</span></h3>
-            <p class="sluzby_reference-top__text">Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví</b>. To, že <b>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+    <section id="reference" class="reference">
+        <header class="sluzby-top">
+            <h3 class="sluzby-top__head">Rádi vám ukážeme naše <span class="orange-text">reference</span></h3>
+            <p class="about-top__text">Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví</b>. To, že <b>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
         </header>
         <div class="reference__items">
-            <div class="reference-item">
-                <img class="reference-item__img" alt="Rekonstrukce hasičské zbrojnice v Rynolticích." src="media/reference/reference-hasicska-zbrojnice-600w.jpg">
-                <div class="reference-item__info">
-                    <p class="reference-item__head">Hasičská zbrojnice</p>
-                    <p class="reference-item__text">celková rekonstrukce</p>
-                </div>
-            </div>
-            <div class="reference-item">
-                <img class="reference-item__img" alt="Stavební úpravy a opravy v rámci zřízení samoobslužné prádelny v Liberci." src="media/reference/reference-pradelna-600w.jpg">
-                <div class="reference-item__info">
-                    <p class="reference-item__head">Samoobslužná prádelna</p>
-                    <p class="reference-item__text">stavební úpravy a opravy</p>
-                </div>
-            </div>
-            <div class="reference-item">
-                <img class="reference-item__img" alt="Provedení venkovních ploch Restyl." src="media/reference/reference-plocha-600w.jpg">
-                <div class="reference-item__info">
-                    <p class="reference-item__head">Venkovní plochy Restyl</p>
-                    <p class="reference-item__text">provedení venkovnách ploch</p>
-                </div>
-            </div>
+            <a href="./zbrojnice.html">
+                    <figure class="reference-item">
+                    <img class="reference-item__img" alt="Rekonstrukce hasičské zbrojnice v Rynolticích." src="media/reference/reference-hasicska-zbrojnice-600w.jpg">
+                    <div class="reference-item__info">
+                        <p class="reference-item__head">Hasičská zbrojnice</p>
+                        <p class="reference-item__text">celková rekonstrukce</p>
+                    </div>
+                </figure>
+            </a>
+            <a href="./pradelna.html">
+                <figure class="reference-item">
+                    <img class="reference-item__img" alt="Stavební úpravy a opravy v rámci zřízení samoobslužné prádelny v Liberci." src="media/reference/reference-pradelna-600w.jpg">
+                    <div class="reference-item__info">
+                        <p class="reference-item__head">Samoobslužná prádelna</p>
+                        <p class="reference-item__text">stavební úpravy a opravy</p>
+                    </div>
+                </figure>
+            </a>
+            <a href="./plochy.html">
+                <figure class="reference-item">
+                    <img class="reference-item__img" alt="Provedení venkovních ploch Restyl." src="media/reference/reference-plocha-600w.jpg">
+                    <div class="reference-item__info">
+                        <p class="reference-item__head">Venkovní plochy Restyl</p>
+                        <p class="reference-item__text">provedení venkovnách ploch</p>
+                    </div>
+                </figure>
+            </a>
         </div>
-        <p class="reference__cta"><a class="button">Více referencí</a></p>
+        <p class="reference__cta"><a href="./reference.html" class="button">Více referencí</a></p>
     </section>
 
 <!------------------------------------------------------------------------------------------->
@@ -113,8 +120,9 @@
     <footer class="footer">
         <p class="footer__head">Plácneme si pro Váš projekt?</p>
         <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <p class="footer_cta"><a class="button button-white">Nezávazně poptat</a></p>
+        <p class="footer_cta"><a href="./kontakt.html" class="button button-white">Nezávazně poptat</a></p>
     </footer>
+
 <!------------------------------------------------------------------------------------------->
 
     <script>

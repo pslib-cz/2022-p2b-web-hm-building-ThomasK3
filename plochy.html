@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>HMBuilding | PLOCHY RESTYL</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="./index.html"><img class="navbar__logo" alt="Logo" src="media/logo.png"></a>
+            <a onclick="Hamburger()" class="hamburger__text" href="javascript:void(0)">MENU</a>
+            <button class="navbar__hamburger" onclick="Hamburger()">&#xe9bd;</button>
+            <ul id="hamburger" class="navbar__items">
+                <li ><a href="./index.html">DOMŮ</a></li>
+                <li><a href="./index.html#services">SLUŽBY</a></li>
+                <li class="nav-active" ><a href="./index.html#reference">REFERENCE</a></li>
+                <li><a href="./o_nas.html">O NÁS</a></li>
+                <li><a href="./kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+
+<!------------------------------------------------------------------------------------------->
+        
+        <header class="header header--other">
+            <h1 class="header__main-head">HM Building.cz s.r.o.</h1>
+            <h2 class="header__second-head">liberecká stavební společnost</h2>
+            <p class="header__cta"><a href="#services" class="button button-special">pokračovat</a></p>
+        </header> 
+    </header>  
+    
+<!------------------------------------------------------------------------------------------->
+
+    <section id="sluzby" class="sluzby">
+        <header class="sluzby-top sluzby-top-gap">
+            <h3 class="sluzby-top__head">Venkovní plochy Restyl</span></h3>
+            <p class="about-top__text">Provedení venkovních ploch Restyl.</p>
+        </header>
+        <div class="sluzby__gallery">
+            <img class="gallery__img" alt="Plochy restyl 1" src="media/reference/plochy-restyl/reference-restyl-01.jpeg">
+            <img class="gallery__img" alt="Plochy restyl 2" src="media/reference/plochy-restyl/reference-restyl-02.jpeg">
+            <img class="gallery__img" alt="Plochy restyl 3" src="media/reference/plochy-restyl/reference-restyl-03.jpeg">
+            <img class="gallery__img" alt="Plochy restyl 4" src="media/reference/plochy-restyl/reference-restyl-04.jpeg">
+        </div>
+    </section>
+
+<!------------------------------------------------------------------------------------------->
+
+    <footer class="footer">
+        <p class="footer__head">Plácneme si pro Váš projekt?</p>
+        <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <p class="footer_cta"><a href="./kontakt.html" class="button button-white">Nezávazně poptat</a></p>
+    </footer>
+
+<!------------------------------------------------------------------------------------------->
+
+    <script>
+        function Hamburger() {
+            document.getElementById("hamburger").classList.toggle("is-active");
+            }
+    </script>
+</body>
+</html>
